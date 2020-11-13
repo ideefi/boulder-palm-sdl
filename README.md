@@ -1,5 +1,5 @@
 Boulder Palm on PC
-Copyright (C) 2001-2019 by Wojciech Martusewicz <martusewicz@interia.pl>
+Copyright (C) 2001-2019 by Wojciech Martusewicz
 
 Moving by arrow buttons or:
 a - left
