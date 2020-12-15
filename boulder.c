@@ -1,6 +1,6 @@
 /* 
  * Boulder Palm
- * Copyright (C) 2001-2019 by Wojciech Martusewicz <martusewicz@interia.pl>
+ * Copyright (C) 2001-2020 by Wojciech Martusewicz <martusewicz@interia.pl>
  */
  
 #include <stdio.h>
@@ -416,7 +416,7 @@ int FindObject(int object, int *y, int *x)
 /**********************************
  * This function moves the player *
  **********************************/
-void MoveHero(char y, char x)
+void MoveHero(int y, int x)
 {
     int j, i, o;
 
@@ -792,12 +792,12 @@ void KeyDown(void)
         case SDLK_j: // Respawn cheat
             SetBoard(Game.lastposy, Game.lastposx, HERO);
             Game.hero_state = FACE1;
+            break;
         case SDLK_t: // Time cheat
             Game.time = Game.level_time;
             break;
         case SDLK_q:
             exit(0);
-            break;
     }
 }
 
